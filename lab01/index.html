@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Webby Forms</title>
+</head>
+<body>
+<h1>Webby Forms</h1>
+<form action="#" method="get">
+<table border=0>
+	<tr>
+		<td><label for="name">Name</label></td>
+		<td><input type="text" name="name" /></td>
+	</tr>
+	<tr>
+		<td><label for="email" pattern="[^ @]*@[^ @]*">Email</label></td>
+		<td><input type="email" name="email" /></td>
+	</tr>
+	<tr>
+		<td><label for="age">Age</label></td>
+		<td>
+			<input type="radio" name="age" value="0" />0-17<br />
+			<input type="radio" name="age" value="18" checked />18-21<br />
+			<input type="radio" name="age" value="22" />22-30<br />
+			<input type="radio" name="age" value="30" />31+<br />
+		</td>
+	</tr>
+	<tr>
+		<td><label for="profession">Profession</label></td>
+		<td>
+			<input type="checkbox" name="profession" value="unepmloyed" />Unemployed<br />
+			<input type="checkbox" name="profession" value="student" />Student<br />
+			<input type="checkbox" name="profession" value="casual" />Casual<br />
+			<input type="checkbox" name="profession" value="parttime" />Part Time<br />
+			<input type="checkbox" name="profession" value="fulltime" />Full Time<br />
+		</td>
+	</tr>
+	<tr>
+		<td><label for="languages">Languages</label></td>
+		<td><select name="languages" multiple="multiple">
+			<option value="english">English</option>
+			<option value="french">French</option>
+			<option value="Japanese">Japanese</option>
+		</select></td>
+	</tr>
+	<tr>
+		<td><label for="comment">Comment</label></td>
+		<td><textarea name="comment"></textarea></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><input type="reset" value="Reset"/> <input type="submit" value="Submit"/></td>
+	</tr>
+</table>
+</body>
+</html>
