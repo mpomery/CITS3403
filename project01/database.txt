@@ -1,0 +1,10 @@
+Users
+-----
+
+id		PRIMARY_KEY
+handle	Unique
+First Name
+Surname
+username
+password (uniquely salted and hashed)
+level (0-9, dictates what can be seen)

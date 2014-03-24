@@ -1,0 +1,135 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	min-width: 768px;
+}
+
+.menu-left {
+	width: 256px;
+	height: 100%;
+	background: #ff00ff;
+	float: left;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.menu-left-collapsed {
+	width: 24px;
+	height: 100%;
+}
+
+.logo {
+	width: 256px;
+	height: 80px;
+	background: #00ff00;
+}
+
+.menu-left ul {
+	display: block;
+	margin: 0;
+	padding-left: 15px;
+	list-style-type: none;
+	padding-bottom: 10px;
+}
+
+.menu-left li {
+	margin: 0;
+}
+
+.shortcuts ul {
+	display: inline-block;
+	margin: 0;
+	padding-left: 0;
+	list-style-type: none;
+}
+
+.shortcuts li {
+	display: inline-block;
+	margin: 5px
+}
+
+.menu-left strong {
+	font-size: 110%;
+	padding-left: 10px;
+}
+
+/* If the screen is not wide enough,Left menu slides in and out from the left */
+
+.main {
+	height: 100%;
+	background: #ff0000;
+	min-width: 768px;
+	width: 100%;
+	padding-left: -256px;
+	margin-left: 256px;
+}
+
+.ticket {
+	width: 768px;
+	min-height: 100%;
+	background: #FFFFFF;
+	margin-left: auto;
+	margin-right: auto;
+	border: solid 1px #000000;
+	border-top: none;
+	border-bottom: none;
+}
+
+.ticket-header {
+	width: 100%;
+}
+
+.ticket-name {
+	float: left;
+	font-size: 200%;
+	font-weight: bold;
+}
+
+.ticket-number {
+	float: right;
+	font-size: 200%;
+	font-weight: bold;
+}
+
+.ticket-header-info {
+	clear: right;
+}
+.ticket-header-info table {
+	width: 90%;
+	border: solid 1px #999999;
+	margin-left: auto;
+	margin-right: auto;
+}
+.ticket-header-info th {
+	width: 20%;
+	border: none;
+	text-align: left;
+}
+
+.ticket-note {
+	margin-top: 10px;
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.ticket-note-who {
+	background: #0000FF;
+	width: 15%;
+	float: left;
+}
+
+.ticket-note-what {
+	background: #00FF00;
+	width: 70%;
+	float: left;
+}
+
+.ticket-note-when {
+	background: #FF0000;
+	width: 15%;
+	float: left;
+}

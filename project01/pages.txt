@@ -1,0 +1,7 @@
+Main Page
+---------
+
+Shows stats for the user
+	Number of tickets open relating to them
+	Age breakdown of tickets
+	
