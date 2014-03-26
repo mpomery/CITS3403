@@ -1,0 +1,201 @@
+$width:					1024px;
+$menuwidth:				256px;
+$menuwidthcollapsed:	24px;
+$mainwidth:				$width - $menuwidth;
+
+$logowidth: $menuwidth;
+$logoheight: 80px;
+
+$background:	#000000;
+$border:		#AAAAAA;
+$darkerarea:	#BBBBBB;
+$shadow:		#888888;
+
+$fontsize: 16px;
+
+html, body {
+	height: 100%;
+	margin: 0;
+	min-width: $width;
+	padding: 0;
+	width: 100%;
+	font-size: $fontsize;
+}
+
+body {
+	background: url("office.png")
+}
+
+.menu-left {
+	background: $darkerarea;
+	float: left;
+	height: 100%;
+	width: $menuwidth;
+}
+
+.menu-left-collapsed {
+	height: 100%;
+	width: $menuwidthcollapsed;
+}
+
+.logo {
+	background: $background;
+	height: $logoheight;
+	width: $menuwidth;
+}
+
+.menu-left ul {
+	display: block;
+	list-style-type: none;
+	margin: 0;
+	padding-bottom: 10px;
+	padding-left: 15px;
+}
+
+.menu-left li {
+	margin: 0;
+}
+
+.shortcuts ul {
+	display: inline-block;
+	list-style-type: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+.shortcuts li {
+	display: inline-block;
+	margin: 5px
+}
+
+.menu-left strong {
+	font-size: 110%;
+	padding-left: 10px;
+}
+
+/* If the screen is not wide enough,Left menu slides in and out from the left */
+
+.main {
+	height: 100%;
+	margin-left: $menuwidth;
+	max-width: 100%;
+	min-width: $mainwidth;
+	padding-left: - $menuwidth;
+}
+
+.ticket {
+	background: #FFFFFF;
+	border: solid 1px $background;
+	border-bottom: none;
+	border-top: none;
+	margin-left: auto;
+	margin-right: auto;
+	min-height: 100%;
+	width: $mainwidth;
+}
+
+.ticket-header {
+	width: 100%;
+}
+
+.ticket-name {
+	float: left;
+	font-size: 200%;
+	font-weight: bold;
+}
+
+.ticket-number {
+	float: right;
+	font-size: 200%;
+	font-weight: bold;
+}
+
+.ticket-header-info {
+	clear: right;
+	width: 700px;
+	box-shadow: 10px 10px 5px $shadow;
+	margin-left: auto;
+	margin-right: auto;
+}
+.ticket-header-info table {
+	width: 100%;
+	border: solid 1px $border;
+}
+.ticket-header-info th {
+	width: 110px;
+	border: none;
+	text-align: left;
+}
+
+.ticket-note {
+	margin-top: 20px;
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	clear: right;
+	font-size: 0px;
+	border-bottom: solid 1px $border;
+}
+
+.ticket-note-line {
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	clear: right;
+	font-size: 0px;
+	border: solid 1px $border;
+	border-bottom: none;
+}
+
+.header {
+	font-weight: bold;
+	text-align: center;
+}
+
+.ticket-note-line div {
+	font-size: $fontsize;
+}
+
+.ticket-note-date {
+	width: 100px;
+	padding: 0;
+	margin: 0;
+	vertical-align: top;
+	text-align: center;
+	display: inline-block;
+}
+
+.ticket-note-who {
+	width: 50px;
+	padding: 0;
+	margin: 0;
+	vertical-align: top;
+	text-align: center;
+	display: inline-block;
+}
+
+.ticket-note-what {
+	width: 490px;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	background: $darkerarea;
+	padding: 5px;
+}
+
+.ticket-note-assign {
+	width: 500px;
+	padding: 0;
+	margin: 0;
+	background: #AAAAAA;
+	display: inline-block;
+}
+
+.ticket-note-time {
+	width: 50px;
+	padding: 0;
+	margin: 0;
+	vertical-align: top;
+	text-align: center;
+	display: inline-block;
+}

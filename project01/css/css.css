@@ -1,154 +1,160 @@
 html, body {
-	width: 100%;
-	height: 100%;
-	padding: 0;
-	margin: 0;
-	min-width: 768px;
-}
+  height: 100%;
+  margin: 0;
+  min-width: 1024px;
+  padding: 0;
+  width: 100%;
+  font-size: 16px; }
 
 body {
-	background: url("office.png")
-}
+  background: url("office.png"); }
 
 .menu-left {
-	width: 256px;
-	height: 100%;
-	background: #CCCCCC;
-	float: left;
-}
+  background: #bbbbbb;
+  float: left;
+  height: 100%;
+  width: 256px; }
 
 .menu-left-collapsed {
-	width: 24px;
-	height: 100%;
-}
+  height: 100%;
+  width: 24px; }
 
 .logo {
-	width: 256px;
-	height: 80px;
-	background: #000000;
-}
+  background: black;
+  height: 80px;
+  width: 256px; }
 
 .menu-left ul {
-	display: block;
-	margin: 0;
-	padding-left: 15px;
-	list-style-type: none;
-	padding-bottom: 10px;
-}
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  padding-bottom: 10px;
+  padding-left: 15px; }
 
 .menu-left li {
-	margin: 0;
-}
+  margin: 0; }
 
 .shortcuts ul {
-	display: inline-block;
-	margin: 0;
-	padding-left: 0;
-	list-style-type: none;
-}
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0; }
 
 .shortcuts li {
-	display: inline-block;
-	margin: 5px
-}
+  display: inline-block;
+  margin: 5px; }
 
 .menu-left strong {
-	font-size: 110%;
-	padding-left: 10px;
-}
+  font-size: 110%;
+  padding-left: 10px; }
 
 /* If the screen is not wide enough,Left menu slides in and out from the left */
-
 .main {
-	height: 100%;
-	min-width: 768px;
-	max-width: 100%;
-	padding-left: -256px;
-	margin-left: 256px;
-}
+  height: 100%;
+  margin-left: 256px;
+  max-width: 100%;
+  min-width: 768px;
+  padding-left: -256px; }
 
 .ticket {
-	width: 768px;
-	min-height: 100%;
-	background: #FFFFFF;
-	margin-left: auto;
-	margin-right: auto;
-	border: solid 1px #000000;
-	border-top: none;
-	border-bottom: none;
-}
+  background: #FFFFFF;
+  border: solid 1px black;
+  border-bottom: none;
+  border-top: none;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100%;
+  width: 768px; }
 
 .ticket-header {
-	width: 100%;
-}
+  width: 100%; }
 
 .ticket-name {
-	float: left;
-	font-size: 200%;
-	font-weight: bold;
-}
+  float: left;
+  font-size: 200%;
+  font-weight: bold; }
 
 .ticket-number {
-	float: right;
-	font-size: 200%;
-	font-weight: bold;
-}
+  float: right;
+  font-size: 200%;
+  font-weight: bold; }
 
 .ticket-header-info {
-	clear: right;
-}
+  clear: right;
+  width: 700px;
+  box-shadow: 10px 10px 5px #888888;
+  margin-left: auto;
+  margin-right: auto; }
+
 .ticket-header-info table {
-	width: 700px;
-	border: solid 1px #999999;
-	margin-left: auto;
-	margin-right: auto;
-}
+  width: 100%;
+  border: solid 1px #aaaaaa; }
+
 .ticket-header-info th {
-	width: 110px;
-	border: none;
-	text-align: left;
-}
+  width: 110px;
+  border: none;
+  text-align: left; }
 
 .ticket-note {
-	margin-top: 20px;
-	width: 700px;
-	margin-left: auto;
-	margin-right: auto;
-	clear: right;
-}
+  margin-top: 20px;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  clear: right;
+  font-size: 0px;
+  border-bottom: solid 1px #aaaaaa; }
 
-.ticket-note tr {
-	/*border: solid 1px #000000;*/
-	outline: 1px solid #000000;
-}
+.ticket-note-line {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  clear: right;
+  font-size: 0px;
+  border: solid 1px #aaaaaa;
+  border-bottom: none; }
+
+.header {
+  font-weight: bold;
+  text-align: center; }
+
+.ticket-note-line div {
+  font-size: 16px; }
 
 .ticket-note-date {
-	width: 100px;
-	padding: 0;
-	margin: 0;
-	vertical-align: top;
-	text-align: center;
-}
+  width: 100px;
+  padding: 0;
+  margin: 0;
+  vertical-align: top;
+  text-align: center;
+  display: inline-block; }
 
 .ticket-note-who {
-	width: 50px;
-	padding: 0;
-	margin: 0;
-	vertical-align: top;
-	text-align: center;
-}
+  width: 50px;
+  padding: 0;
+  margin: 0;
+  vertical-align: top;
+  text-align: center;
+  display: inline-block; }
 
 .ticket-note-what {
-	width: 500px;
-	padding: 0;
-	margin: 0;
-	background: #EEEEEE;
-}
+  width: 490px;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  background: #bbbbbb;
+  padding: 5px; }
 
-.ticket-note-when {
-	width: 50px;
-	padding: 0;
-	margin: 0;
-	vertical-align: top;
-	text-align: center;
-}
+.ticket-note-assign {
+  width: 500px;
+  padding: 0;
+  margin: 0;
+  background: #AAAAAA;
+  display: inline-block; }
+
+.ticket-note-time {
+  width: 50px;
+  padding: 0;
+  margin: 0;
+  vertical-align: top;
+  text-align: center;
+  display: inline-block; }
