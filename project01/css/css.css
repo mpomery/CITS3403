@@ -4,49 +4,51 @@ html, body {
   min-width: 1024px;
   padding: 0;
   width: 100%;
-  font-size: 16px; }
+  font-size: 14px;
+  font-family: Verdana, Geneva, sans-serif; }
 
 body {
   background: url("office.png"); }
-
-.menu-left {
-  background: #bbbbbb;
-  float: left;
-  height: 100%;
-  width: 256px; }
 
 .menu-left-collapsed {
   height: 100%;
   width: 24px; }
 
-.logo {
-  background: black;
-  height: 80px;
+.menu-left {
+  background: #dddddd;
+  float: left;
+  height: 100%;
   width: 256px; }
+  .menu-left ul {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding-bottom: 10px;
+    padding-left: 15px; }
+  .menu-left li {
+    margin: 0; }
+  .menu-left strong {
+    font-size: 110%;
+    padding-left: 10px; }
+  .menu-left a:link, .menu-left a:visited {
+    color: black;
+    text-decoration: none; }
+  .menu-left a:hover, .menu-left a:active {
+    color: #444444;
+    text-decoration: underline; }
 
-.menu-left ul {
-  display: block;
-  list-style-type: none;
-  margin: 0;
-  padding-bottom: 10px;
-  padding-left: 15px; }
-
-.menu-left li {
-  margin: 0; }
+.logo {
+  text-align: center;
+  width: 256px; }
 
 .shortcuts ul {
   display: inline-block;
   list-style-type: none;
   margin: 0;
   padding-left: 0; }
-
 .shortcuts li {
   display: inline-block;
   margin: 5px; }
-
-.menu-left strong {
-  font-size: 110%;
-  padding-left: 10px; }
 
 /* If the screen is not wide enough,Left menu slides in and out from the left */
 .main {
@@ -54,7 +56,8 @@ body {
   margin-left: 256px;
   max-width: 100%;
   min-width: 768px;
-  padding-left: -256px; }
+  padding-left: -256px;
+  overflow-y: scroll; }
 
 .ticket {
   background: #FFFFFF;
@@ -63,8 +66,8 @@ body {
   border-top: none;
   margin-left: auto;
   margin-right: auto;
-  min-height: 100%;
-  width: 768px; }
+  width: 768px;
+  padding-bottom: 30px; }
 
 .ticket-header {
   width: 100%; }
@@ -72,53 +75,66 @@ body {
 .ticket-name {
   float: left;
   font-size: 200%;
-  font-weight: bold; }
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 15px; }
 
 .ticket-number {
   float: right;
   font-size: 200%;
-  font-weight: bold; }
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-right: 15px; }
 
 .ticket-header-info {
   clear: right;
   width: 700px;
-  box-shadow: 10px 10px 5px #888888;
+  box-shadow: 5px 5px 10px #888888;
   margin-left: auto;
   margin-right: auto; }
+  .ticket-header-info table {
+    width: 100%;
+    border: solid 1px #aaaaaa; }
+  .ticket-header-info th {
+    width: 110px;
+    border: none;
+    text-align: left; }
 
-.ticket-header-info table {
-  width: 100%;
-  border: solid 1px #aaaaaa; }
-
-.ticket-header-info th {
-  width: 110px;
-  border: none;
-  text-align: left; }
+.ticket-info {
+  margin-top: 30px;
+  width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  border: solid 1px #aaaaaa;
+  box-shadow: 5px 5px 10px #888888; }
 
 .ticket-note {
-  margin-top: 20px;
+  margin-top: 30px;
   width: 700px;
   margin-left: auto;
   margin-right: auto;
-  clear: right;
   font-size: 0px;
-  border-bottom: solid 1px #aaaaaa; }
+  border-bottom: solid 1px #aaaaaa;
+  clear: right; }
 
 .ticket-note-line {
   width: 700px;
   margin-left: auto;
   margin-right: auto;
-  clear: right;
   font-size: 0px;
   border: solid 1px #aaaaaa;
   border-bottom: none; }
+  .ticket-note-line div {
+    font-size: 14px; }
 
 .header {
   font-weight: bold;
   text-align: center; }
-
-.ticket-note-line div {
-  font-size: 16px; }
+  .header div {
+    padding-top: 5px; }
 
 .ticket-note-date {
   width: 100px;
@@ -137,19 +153,19 @@ body {
   display: inline-block; }
 
 .ticket-note-what {
-  width: 490px;
-  padding: 0;
+  width: 480px;
+  padding: 5px 10px;
   margin: 0;
   display: inline-block;
-  background: #bbbbbb;
-  padding: 5px; }
+  background: #dddddd; }
 
 .ticket-note-assign {
-  width: 500px;
-  padding: 0;
+  width: 480px;
+  padding: 5px 10px;
   margin: 0;
   background: #AAAAAA;
-  display: inline-block; }
+  display: inline-block;
+  text-align: center; }
 
 .ticket-note-time {
   width: 50px;

@@ -7,11 +7,12 @@ $logowidth: $menuwidth;
 $logoheight: 80px;
 
 $background:	#000000;
+$darktext:		#444444;
 $border:		#AAAAAA;
-$darkerarea:	#BBBBBB;
+$darkerarea:	#DDDDDD;
 $shadow:		#888888;
 
-$fontsize: 16px;
+$fontsize: 14px;
 
 html, body {
 	height: 100%;
@@ -20,17 +21,11 @@ html, body {
 	padding: 0;
 	width: 100%;
 	font-size: $fontsize;
+	font-family: Verdana, Geneva, sans-serif;
 }
 
 body {
 	background: url("office.png")
-}
-
-.menu-left {
-	background: $darkerarea;
-	float: left;
-	height: 100%;
-	width: $menuwidth;
 }
 
 .menu-left-collapsed {
@@ -38,40 +33,60 @@ body {
 	width: $menuwidthcollapsed;
 }
 
+.menu-left{
+	background: $darkerarea;
+	float: left;
+	height: 100%;
+	width: $menuwidth;
+	
+	ul {
+		display: block;
+		list-style-type: none;
+		margin: 0;
+		padding-bottom: 10px;
+		padding-left: 15px;
+	}
+	
+	li {
+		margin: 0;
+	}
+	
+	strong {
+		font-size: 110%;
+		padding-left: 10px;
+	}
+	
+	a {
+		&:link, &:visited {
+			color: $background;
+			text-decoration: none;
+		}
+		
+		&:hover, &:active {
+			color: $darktext;
+			text-decoration: underline;
+		}
+	}
+}
+
 .logo {
-	background: $background;
-	height: $logoheight;
+	text-align: center;
 	width: $menuwidth;
 }
 
-.menu-left ul {
-	display: block;
-	list-style-type: none;
-	margin: 0;
-	padding-bottom: 10px;
-	padding-left: 15px;
+.shortcuts {
+	ul {
+		display: inline-block;
+		list-style-type: none;
+		margin: 0;
+		padding-left: 0;
+	}
+		li {
+		display: inline-block;
+		margin: 5px
+	}
 }
 
-.menu-left li {
-	margin: 0;
-}
-
-.shortcuts ul {
-	display: inline-block;
-	list-style-type: none;
-	margin: 0;
-	padding-left: 0;
-}
-
-.shortcuts li {
-	display: inline-block;
-	margin: 5px
-}
-
-.menu-left strong {
-	font-size: 110%;
-	padding-left: 10px;
-}
 
 /* If the screen is not wide enough,Left menu slides in and out from the left */
 
@@ -81,6 +96,7 @@ body {
 	max-width: 100%;
 	min-width: $mainwidth;
 	padding-left: - $menuwidth;
+	overflow-y: scroll;
 }
 
 .ticket {
@@ -90,8 +106,9 @@ body {
 	border-top: none;
 	margin-left: auto;
 	margin-right: auto;
-	min-height: 100%;
+	//min-height: 100%;
 	width: $mainwidth;
+	padding-bottom: 30px;
 }
 
 .ticket-header {
@@ -102,58 +119,80 @@ body {
 	float: left;
 	font-size: 200%;
 	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	padding-left: 15px;
 }
 
 .ticket-number {
 	float: right;
 	font-size: 200%;
 	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	padding-right: 15px;
 }
 
 .ticket-header-info {
 	clear: right;
 	width: 700px;
-	box-shadow: 10px 10px 5px $shadow;
+	box-shadow: 5px 5px 10px $shadow;
 	margin-left: auto;
 	margin-right: auto;
+	
+	table {
+		width: 100%;
+		border: solid 1px $border;
+	}
+	
+	th {
+		width: 110px;
+		border: none;
+		text-align: left;
+	}
+
 }
-.ticket-header-info table {
-	width: 100%;
+
+.ticket-info {
+	margin-top: 30px;
+	width: 680px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
 	border: solid 1px $border;
-}
-.ticket-header-info th {
-	width: 110px;
-	border: none;
-	text-align: left;
+	box-shadow: 5px 5px 10px $shadow;
 }
 
 .ticket-note {
-	margin-top: 20px;
+	margin-top: 30px;
 	width: 700px;
 	margin-left: auto;
 	margin-right: auto;
-	clear: right;
 	font-size: 0px;
 	border-bottom: solid 1px $border;
+	clear: right;
 }
 
 .ticket-note-line {
 	width: 700px;
 	margin-left: auto;
 	margin-right: auto;
-	clear: right;
 	font-size: 0px;
 	border: solid 1px $border;
 	border-bottom: none;
+	
+	div {
+		font-size: $fontsize;
+	}
 }
 
 .header {
 	font-weight: bold;
 	text-align: center;
-}
-
-.ticket-note-line div {
-	font-size: $fontsize;
+	
+	div {
+		padding-top: 5px;
+	}
 }
 
 .ticket-note-date {
@@ -175,20 +214,20 @@ body {
 }
 
 .ticket-note-what {
-	width: 490px;
-	padding: 0;
+	width: 480px;
+	padding: 5px 10px;
 	margin: 0;
 	display: inline-block;
 	background: $darkerarea;
-	padding: 5px;
 }
 
 .ticket-note-assign {
-	width: 500px;
-	padding: 0;
+	width: 480px;
+	padding: 5px 10px;
 	margin: 0;
 	background: #AAAAAA;
 	display: inline-block;
+	text-align: center;
 }
 
 .ticket-note-time {
