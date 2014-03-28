@@ -38,35 +38,7 @@ body {
 	float: left;
 	height: 100%;
 	width: $menuwidth;
-	
-	ul {
-		display: block;
-		list-style-type: none;
-		margin: 0;
-		padding-bottom: 10px;
-		padding-left: 15px;
-	}
-	
-	li {
-		margin: 0;
-	}
-	
-	strong {
-		font-size: 110%;
-		padding-left: 10px;
-	}
-	
-	a {
-		&:link, &:visited {
-			color: $background;
-			text-decoration: none;
-		}
-		
-		&:hover, &:active {
-			color: $darktext;
-			text-decoration: underline;
-		}
-	}
+	overflow: hidden;
 }
 
 .logo {
@@ -85,8 +57,49 @@ body {
 		display: inline-block;
 		margin: 5px
 	}
+	margin-bottom: 10px;
+	margin-top: 10px;
 }
 
+.links {
+	ul {
+		display: block;
+		list-style-type: none;
+		margin: 0;
+		padding-bottom: 10px;
+		padding-left: 15px;
+	}
+	
+	li {
+		margin: 0;
+	}
+	
+	strong {
+		padding-top: 10px;
+		font-size: 110%;
+		padding-left: 10px;
+	}
+	
+	a {
+		&:link, &:visited {
+			color: $background;
+			text-decoration: none;
+		}
+		
+		&:hover, &:active {
+			color: $darktext;
+			text-decoration: underline;
+		}
+	}
+}
+
+.tickets {
+	display: none;
+}
+
+.logout {
+	display: none;
+}
 
 /* If the screen is not wide enough,Left menu slides in and out from the left */
 
@@ -97,6 +110,7 @@ body {
 	min-width: $mainwidth;
 	padding-left: - $menuwidth;
 	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
 .ticket {

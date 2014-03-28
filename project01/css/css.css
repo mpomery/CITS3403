@@ -18,37 +18,49 @@ body {
   background: #dddddd;
   float: left;
   height: 100%;
-  width: 256px; }
-  .menu-left ul {
-    display: block;
-    list-style-type: none;
-    margin: 0;
-    padding-bottom: 10px;
-    padding-left: 15px; }
-  .menu-left li {
-    margin: 0; }
-  .menu-left strong {
-    font-size: 110%;
-    padding-left: 10px; }
-  .menu-left a:link, .menu-left a:visited {
-    color: black;
-    text-decoration: none; }
-  .menu-left a:hover, .menu-left a:active {
-    color: #444444;
-    text-decoration: underline; }
+  width: 256px;
+  overflow: hidden; }
 
 .logo {
   text-align: center;
   width: 256px; }
 
-.shortcuts ul {
-  display: inline-block;
+.shortcuts {
+  margin-bottom: 10px;
+  margin-top: 10px; }
+  .shortcuts ul {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0; }
+  .shortcuts li {
+    display: inline-block;
+    margin: 5px; }
+
+.links ul {
+  display: block;
   list-style-type: none;
   margin: 0;
-  padding-left: 0; }
-.shortcuts li {
-  display: inline-block;
-  margin: 5px; }
+  padding-bottom: 10px;
+  padding-left: 15px; }
+.links li {
+  margin: 0; }
+.links strong {
+  padding-top: 10px;
+  font-size: 110%;
+  padding-left: 10px; }
+.links a:link, .links a:visited {
+  color: black;
+  text-decoration: none; }
+.links a:hover, .links a:active {
+  color: #444444;
+  text-decoration: underline; }
+
+.tickets {
+  display: none; }
+
+.logout {
+  display: none; }
 
 /* If the screen is not wide enough,Left menu slides in and out from the left */
 .main {
@@ -57,7 +69,8 @@ body {
   max-width: 100%;
   min-width: 768px;
   padding-left: -256px;
-  overflow-y: scroll; }
+  overflow-y: scroll;
+  overflow-x: hidden; }
 
 .ticket {
   background: #FFFFFF;

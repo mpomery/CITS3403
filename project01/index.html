@@ -3,6 +3,8 @@
 <head>
 	<title>Job System</title>
 	<link rel="stylesheet" href="css/css.css">
+	<script src="js/jquery-1.11.0.js"></script>
+	<script src="js/ui.js"></script>
 </head>
 <body>
 
@@ -11,31 +13,43 @@
 	<div class="logo"><img src="css/logo.png" /></div>
 	<div class="shortcuts">
 		<ul>
-			<li><img src="css/home.png" /></li>
-			<li><img src="css/tickets.png" /></li> <!-- Shows ticket tabs you have opened for fast switching -->
-			<li><img src="css/logout.png" /></li>
+			<li data-name="links"><img src="css/home.png" /></li>
+			<li data-name="tickets"><img src="css/tickets.png" /></li> <!-- Shows ticket tabs you have opened for fast switching -->
+			<li data-name="logout"><img src="css/logout.png" /></li>
 		</ul>
 	</div>
-	<strong>Jobs</strong>
-	<ul>
-		<li><a href="#">List</a></li>
-		<li><a href="#">Create</a></li>
-		<li><a href="#">Completed</a></li>
-		<li><a href="#">Search</a></li>
-	</ul>
-	<!-- Anything past here is admins only -->
-	<strong>Users</strong>
-	<ul>
-		<li><a href="#">Search</a></li>
-		<li><a href="#">List</a></li>
-		<li><a href="#">Add</a></li>
-	</ul>
-	<strong>Administration</strong>
-	<ul>
-		<li><a href="#">Stats</a></li>
-		<li><a href="#">Users</a></li>
-		<li><a href="#">Settings</a></li>
-	</ul>
+	<div class="links">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Stats</a></li>
+		</ul>
+		<strong>Jobs</strong>
+		<ul>
+			<li><a href="#">List</a></li>
+			<li><a href="#">Create</a></li>
+			<li><a href="#">Completed</a></li>
+			<li><a href="#">Search</a></li>
+		</ul>
+		<!-- Anything past here is admins only -->
+		<strong>Users</strong>
+		<ul>
+			<li><a href="#">Search</a></li>
+			<li><a href="#">List</a></li>
+			<li><a href="#">Add</a></li>
+		</ul>
+		<strong>Administration</strong>
+		<ul>
+			<li><a href="#">Stats</a></li>
+			<li><a href="#">Users</a></li>
+			<li><a href="#">Settings</a></li>
+		</ul>
+	</div>
+	<div class="tickets">
+		Ticket List
+	</div>
+	<div class="logout">
+		Logout
+	</div>
 </div>
 
 <div class="main">
