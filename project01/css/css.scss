@@ -39,6 +39,9 @@ body {
 	height: 100%;
 	width: $menuwidth;
 	overflow: hidden;
+	li {
+		cursor: pointer;
+	}
 }
 
 .logo {

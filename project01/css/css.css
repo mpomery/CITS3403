@@ -20,6 +20,8 @@ body {
   height: 100%;
   width: 256px;
   overflow: hidden; }
+  .menu-left li {
+    cursor: pointer; }
 
 .logo {
   text-align: center;
