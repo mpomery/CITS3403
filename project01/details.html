@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Job System</title>
+	<link rel="stylesheet" href="css/css.css">
+	<script src="js/jquery-1.11.0.js"></script>
+	<script src="js/ui.js"></script>
+</head>
+<body>
+
+<div class="menu-left">
+	<!-- Make this bar collapse -->
+	<div class="logo"><img src="css/logo.png" /></div>
+	<div class="shortcuts">
+		<ul>
+			<li data-name="links"><img src="css/home.png" /></li>
+			<li data-name="tickets"><img src="css/tickets.png" /></li> <!-- Shows ticket tabs you have opened for fast switching -->
+			<li data-name="logout"><img src="css/logout.png" /></li>
+		</ul>
+	</div>
+	<div class="links">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#">Stats</a></li>
+		</ul>
+		<strong>Jobs</strong>
+		<ul>
+			<li><a href="#">List</a></li>
+			<li><a href="#">Create</a></li>
+			<li><a href="#">Completed</a></li>
+			<li><a href="#">Search</a></li>
+		</ul>
+		<!-- Anything past here is admins only -->
+		<strong>Users</strong>
+		<ul>
+			<li><a href="#">Search</a></li>
+			<li><a href="#">List</a></li>
+			<li><a href="#">Add</a></li>
+		</ul>
+		<strong>Administration</strong>
+		<ul>
+			<li><a href="#">Stats</a></li>
+			<li><a href="#">Users</a></li>
+			<li><a href="#">Settings</a></li>
+		</ul>
+	</div>
+	<div class="tickets">
+		Ticket List
+	</div>
+	<div class="logout">
+		Logout
+	</div>
+</div>
+
+<div class="main">
+	<div class="ticket">
+		<div class="ticket-header">
+			<span class="ticket-name">%CUSTOMER NAME%</span>
+			<span class="ticket-number">%#000000%</span>
+			<div class="ticket-header-info">
+				<table>
+					<tr>
+						<th>Name</th>
+						<td>%name%</td>
+						<th>Job Opened</th>
+						<td>%opened%</td>
+					</tr>
+					<tr>
+						<th>Phone Number</th>
+						<td>%phone%</td>
+						<th>Hours Booked</th>
+						<td>%hours%</td>
+					</tr>
+					<tr>
+						<th>Assigned To</th>
+						<td>%assigned%</td>
+						<th rowspan=2>Comments</th>
+						<td rowspan=2>%comments%</td>
+					</tr>
+					
+					<tr>
+						<th>Last Column</th>
+						<td>%last%</td>
+					</tr>
+				</table>
+				<!-- Something here to minimize job info -->
+			</div>
+		</div>
+		
+		<div class="ticket-info">
+			Cat avenger right pizza admire phone hitler homework essay fun. Scared sit nap high school read in so close friendzoned i see what you did there angry birds super rage. Okay jackie chan laptop amet lois aww yeah creepy me gusta oh god why bear nerd. Unsave final week bacon loki collection herp derp pokeman you don't say? 9000 female fuuuuuuuuuuccckkkkkk movies drink not bad le friend cuteness overload back sandwich. Derpina father hulk fuck yeah good guy viverra steve jobs sex dead space. Genius problem? Kitchen woman true story if you know what i mean twitter peter griffin i'm watching u i lied one does not simply no bad. Dummies just morbi nyan cat why nother to do here money so hardcore. German varius meme movie.
+		</div>
+		
+		<div class="ticket-note">
+			<div class="ticket-note-line header">
+				<div class="ticket-note-date">Date</div>
+				<div class="ticket-note-who">Who</div>
+				<div class="ticket-note-what">Comments</div>
+				<div class="ticket-note-time">Time</div>
+			</div>
+			<div class="ticket-note-line">
+				<div class="ticket-note-date">2014-03-11</div>
+				<div class="ticket-note-who">MP</div>
+				<div class="ticket-note-what">Ground round capicola chicken jerky. Tail prosciutto hamburger sirloin ham hock ground round chicken spare ribs beef ribs bresaola filet mignon boudin tongue. Pork chop kielbasa kevin shoulder biltong ground round bresaola, frankfurter bacon rump strip steak. Meatball jerky andouille kevin brisket ham hock, ground round kielbasa jowl turkey ham shoulder pancetta rump shankle. Fatback pig filet mignon, cow corned beef ham beef pork chop jerky t-bone pork loin shankle tri-tip. Spare ribs turkey salami shoulder frankfurter pastrami.</div>
+				<div class="ticket-note-time">WHEN</div>
+			</div>
+			<div class="ticket-note-line">
+				<div class="ticket-note-date">2014-03-11</div>
+				<div class="ticket-note-who"></div>
+				<div class="ticket-note-assign">Ticket Has Been Assigned to %person1% and %person2%</div>
+				<div class="ticket-note-time">WHEN</div>
+			</div>
+			<div class="ticket-note-line">
+				<div class="ticket-note-date">2014-03-11</div>
+				<div class="ticket-note-who">DL</div>
+				<div class="ticket-note-what">Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.</div>
+				<div class="ticket-note-time">WHEN</div>
+			</div>
+			<div class="ticket-note-line">
+				<div class="ticket-note-date">2014-03-11</div>
+				<div class="ticket-note-who">DH</div>
+				<div class="ticket-note-what">You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Well I'da done better, but it's plum hard pleading a case while awaiting trial for that there incompetence. Whoa a real live robot; or is that some kind of cheesy New Year's costume? Okay, it's 500 dollars, you have no choice of carrier, the battery can't hold the charge and the reception isn't very&hellip;</div>
+				<div class="ticket-note-time">WHEN</div>
+			</div>
+			<div class="ticket-note-line">
+				<div class="ticket-note-date">2014-03-11</div>
+				<div class="ticket-note-who">MP</div>
+				<div class="ticket-note-what">Grab us a greenie piece of piss built like a knock. Stands out like a thongs my grab us a ratbag. Lets get some roadie get a dog up ya khe sanh. You little ripper boil-over with you little ripper parma. Lets get some dob piece of piss as busy as a larrikin. Lets get some franger how built like a bush telly. It'll be lizard drinking also shonky. You little ripper strides how she'll be right stonkered.</div>
+				<div class="ticket-note-time">WHEN</div>
+			</div>
+			<div class="ticket-note-line">
+				<div class="ticket-note-date">2014-03-11</div>
+				<div class="ticket-note-who">MP</div>
+				<div class="ticket-note-what">Put a bird on it asymmetrical master cleanse actually, yr single-origin coffee twee retro pickled banh mi iPhone skateboard leggings. Lomo tofu banh mi aesthetic, blog Intelligentsia freegan lo-fi kale chips actually Portland shabby chic butcher. Selvage squid selfies disrupt, swag tofu master cleanse narwhal hoodie Intelligentsia tousled direct trade forage.</div>
+				<div class="ticket-note-time">WHEN</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

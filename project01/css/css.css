@@ -10,6 +10,35 @@ html, body {
 body {
   background: url("office.png"); }
 
+.login-container {
+  height: 100%;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+  background: #00FF00;
+  width: 512px; }
+
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -256px;
+  /* width / -2 */
+  margin-top: -128px;
+  /* height / -2 */
+  width: 452px;
+  height: 196px;
+  padding: 30px;
+  background: #FFFFFF;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  border: solid 1px #aaaaaa;
+  text-align: center; }
+  .login-box table {
+    margin-left: auto;
+    margin-right: auto; }
+
 .menu-left-collapsed {
   height: 100%;
   width: 24px; }
