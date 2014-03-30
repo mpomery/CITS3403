@@ -22,9 +22,119 @@
 	padding-bottom: 20px;
 	padding-left: 15px;
 }
+.home-welcome2 {
+	float: right;
+	font-size: 200%;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	padding-left: 15px;
+}
+
+.home-content {
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	clear: right;
+}
 
 .home-info {
-	clear: right;
 	width: 700px;
+	margin-top: 10px;
+}
+
+.home-numbers {
+	width: 330px;
+	float: left;
 	box-shadow: 5px 5px 10px $shadow;
+	table {
+		width: 100%;
+		border: 1px solid $border;
+		border-collapse: collapse;
+	}
+	td, th {
+		border: 1px solid $border;
+	}
+}
+
+.home-quickstats {
+	width: 330px;
+	float: right;
+	box-shadow: 5px 5px 10px $shadow;
+	table {
+		width: 100%;
+		border: 1px solid $border;
+		border-collapse: collapse;
+	}
+	th {
+		border: 1px solid $border;
+	}
+	td {
+		width: 50%;
+	}
+}
+
+.home-stats-bar {
+	display: inline-block;
+	width: 50%;
+	height: 10px;
+	background: $shadow;
+}
+
+.home-today {
+	border-bottom: solid 1px $border;
+}
+
+.home-today-title {
+	padding-top: 30px;
+	padding-bottom: 15px;
+	font-size: 150%;
+	clear: right;
+}
+
+.home-today-line {
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 0px;
+	border: solid 1px $border;
+	border-bottom: none;
+	
+	div {
+		font-size: $fontsize;
+	}
+}
+
+.home-today-header {
+	font-weight: bold;
+	text-align: center;
+	div {
+		padding-top: 5px;
+	}
+}
+
+.home-today-job {
+	width: 100px;
+	padding: 0;
+	margin: 0;
+	vertical-align: top;
+	text-align: center;
+	display: inline-block;
+}
+
+.home-today-what {
+	width: 530px;
+	padding: 5px 10px;
+	margin: 0;
+	display: inline-block;
+	background: $darkerarea;
+}
+
+.home-today-time {
+	width: 50px;
+	padding: 0;
+	margin: 0;
+	vertical-align: top;
+	text-align: center;
+	display: inline-block;
 }

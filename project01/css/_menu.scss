@@ -73,3 +73,13 @@
 .logout {
 	display: none;
 }
+
+.main {
+	height: 100%;
+	margin-left: $menuwidth;
+	max-width: 100%;
+	min-width: $mainwidth;
+	padding-left: - $menuwidth;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}

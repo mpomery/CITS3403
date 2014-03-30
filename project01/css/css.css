@@ -81,6 +81,15 @@
 .logout {
   display: none; }
 
+.main {
+  height: 100%;
+  margin-left: 256px;
+  max-width: 100%;
+  min-width: 768px;
+  padding-left: -256px;
+  overflow-y: scroll;
+  overflow-x: hidden; }
+
 .home {
   background: #FFFFFF;
   border: solid 1px black;
@@ -102,10 +111,101 @@
   padding-bottom: 20px;
   padding-left: 15px; }
 
-.home-info {
-  clear: right;
+.home-welcome2 {
+  float: right;
+  font-size: 200%;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 15px; }
+
+.home-content {
   width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  clear: right; }
+
+.home-info {
+  width: 700px;
+  margin-top: 10px; }
+
+.home-numbers {
+  width: 330px;
+  float: left;
   box-shadow: 5px 5px 10px #888888; }
+  .home-numbers table {
+    width: 100%;
+    border: 1px solid #aaaaaa;
+    border-collapse: collapse; }
+  .home-numbers td, .home-numbers th {
+    border: 1px solid #aaaaaa; }
+
+.home-quickstats {
+  width: 330px;
+  float: right;
+  box-shadow: 5px 5px 10px #888888; }
+  .home-quickstats table {
+    width: 100%;
+    border: 1px solid #aaaaaa;
+    border-collapse: collapse; }
+  .home-quickstats th {
+    border: 1px solid #aaaaaa; }
+  .home-quickstats td {
+    width: 50%; }
+
+.home-stats-bar {
+  display: inline-block;
+  width: 50%;
+  height: 10px;
+  background: #888888; }
+
+.home-today {
+  border-bottom: solid 1px #aaaaaa; }
+
+.home-today-title {
+  padding-top: 30px;
+  padding-bottom: 15px;
+  font-size: 150%;
+  clear: right; }
+
+.home-today-line {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0px;
+  border: solid 1px #aaaaaa;
+  border-bottom: none; }
+  .home-today-line div {
+    font-size: 14px; }
+
+.home-today-header {
+  font-weight: bold;
+  text-align: center; }
+  .home-today-header div {
+    padding-top: 5px; }
+
+.home-today-job {
+  width: 100px;
+  padding: 0;
+  margin: 0;
+  vertical-align: top;
+  text-align: center;
+  display: inline-block; }
+
+.home-today-what {
+  width: 530px;
+  padding: 5px 10px;
+  margin: 0;
+  display: inline-block;
+  background: #dddddd; }
+
+.home-today-time {
+  width: 50px;
+  padding: 0;
+  margin: 0;
+  vertical-align: top;
+  text-align: center;
+  display: inline-block; }
 
 .ticket {
   background: #FFFFFF;
@@ -234,12 +334,3 @@ html, body {
 
 body {
   background: url("office.png"); }
-
-.main {
-  height: 100%;
-  margin-left: 256px;
-  max-width: 100%;
-  min-width: 768px;
-  padding-left: -256px;
-  overflow-y: scroll;
-  overflow-x: hidden; }
