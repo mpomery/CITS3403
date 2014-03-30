@@ -1,0 +1,139 @@
+.ticket {
+	background: #FFFFFF;
+	border: solid 1px $background;
+	border-bottom: none;
+	border-top: none;
+	margin-left: auto;
+	margin-right: auto;
+	//min-height: 100%;
+	width: $mainwidth;
+	padding-bottom: 30px;
+}
+
+.ticket-header {
+	width: 100%;
+}
+
+.ticket-name {
+	float: left;
+	font-size: 200%;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	padding-left: 15px;
+}
+
+.ticket-number {
+	float: right;
+	font-size: 200%;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	padding-right: 15px;
+}
+
+.ticket-header-info {
+	clear: right;
+	width: 700px;
+	box-shadow: 5px 5px 10px $shadow;
+	margin-left: auto;
+	margin-right: auto;
+	
+	table {
+		width: 100%;
+		border: solid 1px $border;
+	}
+	
+	th {
+		width: 110px;
+		border: none;
+		text-align: left;
+	}
+
+}
+
+.ticket-info {
+	margin-top: 30px;
+	width: 680px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	border: solid 1px $border;
+	box-shadow: 5px 5px 10px $shadow;
+}
+
+.ticket-note {
+	margin-top: 30px;
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 0px;
+	border-bottom: solid 1px $border;
+	clear: right;
+}
+
+.ticket-note-line {
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 0px;
+	border: solid 1px $border;
+	border-bottom: none;
+	
+	div {
+		font-size: $fontsize;
+	}
+}
+
+.header {
+	font-weight: bold;
+	text-align: center;
+	
+	div {
+		padding-top: 5px;
+	}
+}
+
+.ticket-note-date {
+	width: 100px;
+	padding: 0;
+	margin: 0;
+	vertical-align: top;
+	text-align: center;
+	display: inline-block;
+}
+
+.ticket-note-who {
+	width: 50px;
+	padding: 0;
+	margin: 0;
+	vertical-align: top;
+	text-align: center;
+	display: inline-block;
+}
+
+.ticket-note-what {
+	width: 480px;
+	padding: 5px 10px;
+	margin: 0;
+	display: inline-block;
+	background: $darkerarea;
+}
+
+.ticket-note-assign {
+	width: 480px;
+	padding: 5px 10px;
+	margin: 0;
+	background: #AAAAAA;
+	display: inline-block;
+	text-align: center;
+}
+
+.ticket-note-time {
+	width: 50px;
+	padding: 0;
+	margin: 0;
+	vertical-align: top;
+	text-align: center;
+	display: inline-block;
+}

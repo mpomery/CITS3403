@@ -1,15 +1,3 @@
-html, body {
-  height: 100%;
-  margin: 0;
-  min-width: 1024px;
-  padding: 0;
-  width: 100%;
-  font-size: 14px;
-  font-family: Verdana, Geneva, sans-serif; }
-
-body {
-  background: url("office.png"); }
-
 .login-container {
   height: 100%;
   vertical-align: middle;
@@ -26,8 +14,8 @@ body {
   /* width / -2 */
   margin-top: -128px;
   /* height / -2 */
-  width: 452px;
-  height: 196px;
+  width: 450px;
+  height: 194px;
   padding: 30px;
   background: #FFFFFF;
   -webkit-border-radius: 30px;
@@ -93,15 +81,31 @@ body {
 .logout {
   display: none; }
 
-/* If the screen is not wide enough,Left menu slides in and out from the left */
-.main {
-  height: 100%;
-  margin-left: 256px;
-  max-width: 100%;
-  min-width: 768px;
-  padding-left: -256px;
-  overflow-y: scroll;
-  overflow-x: hidden; }
+.home {
+  background: #FFFFFF;
+  border: solid 1px black;
+  border-bottom: none;
+  border-top: none;
+  margin-left: auto;
+  margin-right: auto;
+  width: 768px;
+  padding-bottom: 30px; }
+
+.home-header {
+  width: 100%; }
+
+.home-welcome {
+  float: left;
+  font-size: 200%;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 15px; }
+
+.home-info {
+  clear: right;
+  width: 700px;
+  box-shadow: 5px 5px 10px #888888; }
 
 .ticket {
   background: #FFFFFF;
@@ -218,3 +222,24 @@ body {
   vertical-align: top;
   text-align: center;
   display: inline-block; }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  min-width: 1024px;
+  padding: 0;
+  width: 100%;
+  font-size: 14px;
+  font-family: Verdana, Geneva, sans-serif; }
+
+body {
+  background: url("office.png"); }
+
+.main {
+  height: 100%;
+  margin-left: 256px;
+  max-width: 100%;
+  min-width: 768px;
+  padding-left: -256px;
+  overflow-y: scroll;
+  overflow-x: hidden; }
