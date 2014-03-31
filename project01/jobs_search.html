@@ -48,14 +48,28 @@
 <div class="main">
 	<div class="jobs-list">
 		<div class="jobs-title">Search Jobs</div>
-		<form>
-			<table>
-				<tr>
-					<th>Job Number</th>
-					<td></td>
-				</tr>
-			</table>
-		</form>
+		<div class="ticket-info">
+			<form method="POST" action="jobs_list.html">
+				<table>
+					<tr>
+						<th>Job Number</th>
+						<td><input type="number"></td>
+						<th>Assigned To</th>
+						<td><input type="text"></td>
+					</tr>
+					<tr>
+						<th>Customer Name</th>
+						<td><input type="text"></td>
+						<th>Comments</th>
+						<td><input type="text"></td>
+					</tr>
+					<tr>
+						<td colspan=3></td>
+						<td><input type="submit" value="Search"></td>
+					</tr>
+				</table>
+			</form>
+		</div>
 	</div>
 </div>
 
