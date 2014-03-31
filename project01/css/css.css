@@ -382,14 +382,19 @@
 .jobs-customer {
   width: 400px;
   margin: 0;
-  display: inline-block;
-  background: #dddddd; }
+  display: inline-block; }
 
 .jobs-assigned {
   width: 100px;
   padding: 0;
   margin: 0;
   display: inline-block; }
+
+.old {
+  background: #FFFF00; }
+
+.ancient {
+  background: #FF0000; }
 
 html, body {
   height: 100%;
