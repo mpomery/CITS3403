@@ -323,6 +323,74 @@
   text-align: center;
   display: inline-block; }
 
+.jobs-list {
+  border-bottom: none;
+  background: #FFFFFF;
+  border: solid 1px black;
+  border-top: none;
+  margin-left: auto;
+  margin-right: auto;
+  width: 768px;
+  padding-bottom: 30px; }
+
+.ticket-header {
+  width: 100%; }
+
+.jobs-title {
+  float: none;
+  font-size: 200%;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 15px; }
+
+.jobs-lines {
+  margin-top: 30px;
+  width: 702px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0px;
+  border-bottom: solid 1px #aaaaaa;
+  clear: right; }
+
+.jobs-line {
+  width: 702px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0px;
+  border: solid 1px #aaaaaa;
+  border-bottom: none; }
+  .jobs-line div {
+    font-size: 14px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-align: center; }
+
+.jobs-date {
+  width: 100px;
+  padding: 0;
+  margin: 0;
+  display: inline-block; }
+
+.jobs-number {
+  width: 100px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  display: inline-block; }
+
+.jobs-customer {
+  width: 400px;
+  margin: 0;
+  display: inline-block;
+  background: #dddddd; }
+
+.jobs-assigned {
+  width: 100px;
+  padding: 0;
+  margin: 0;
+  display: inline-block; }
+
 html, body {
   height: 100%;
   margin: 0;
