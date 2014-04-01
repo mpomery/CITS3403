@@ -1,0 +1,67 @@
+.users-list {
+	border-bottom: none;
+	background: #FFFFFF;
+	border: solid 1px $background;
+	border-top: none;
+	margin-left: auto;
+	margin-right: auto;
+	//min-height: 100%;
+	width: $mainwidth;
+	padding-bottom: 30px;
+}
+
+.users-title {
+	float: none;
+	font-size: 200%;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	padding-left: 15px;
+}
+
+.users-lines {
+	margin-top: 30px;
+	width: 702px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 0px;
+	border-bottom: solid 1px $border;
+	clear: right;
+}
+
+.users-line {
+	width: 702px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 0px;
+	border: solid 1px $border;
+	border-bottom: none;
+	
+	div {
+		font-size: $fontsize;
+		padding-top: 2px;
+		padding-bottom: 2px;
+		text-align: center;
+	}
+}
+
+.users-name {
+	width: 150px;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+}
+
+.users-number {
+	width: 150px;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	display: inline-block;
+}
+
+.users-address {
+	width: 400px;
+	margin: 0;
+	display: inline-block;
+}
