@@ -118,6 +118,10 @@
 	margin: 0;
 	display: inline-block;
 	background: $darkerarea;
+	textarea {
+		width: 100%;
+		height: 80px;
+	}
 }
 
 .ticket-note-assign {
@@ -136,4 +140,7 @@
 	vertical-align: top;
 	text-align: center;
 	display: inline-block;
+	input {
+		width: 40px;
+	}
 }
