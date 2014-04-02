@@ -4,12 +4,17 @@
 
 * Contents
 * Specifications
+* Pages
+* Form Controls
+* CSS
+* Javascript
+* DHTML
 
 ## Specifications
 
 **The following is a list taken from the [project webpage](http://undergraduate.csse.uwa.edu.au/units/CITS3403/index.php?fname=project-1&project=yes)**
 
->1. A total of at least 5 pages to meet your site purpose.
+> 1. A total of at least 5 pages to meet your site purpose.
 2. Your website must support Internet Explorer, Firefox and Opera, under the version used in our Lab Linux system. You code must be CSS2.1 and XHTML1.1 Strict or HTML5 valid. Display the validation logo and the link to the validation results. CSS3 is required. Note that validation errors on CSS3 properties will not affect your mark. You can still display the CSS2.1 valid logo.
 3. Site Structure
     1. The site should implement a mixed structure, main pages to be linked in a hiearachical structure
@@ -36,8 +41,8 @@
 
 **A summary of the above list:**
 
->1. 5 pages minimum
-2. HTML5 and CSS2.1 Valid
+> 1. 5 pages minimum
+2. HTML5 strict and CSS2.1 Valid
 3. Site Structure - Linear
 4. Navigation on every page.
     * And a site map
@@ -54,3 +59,35 @@
     * DHTML
 8. Page layouts in CSS ONLY
 9. References for all free media on a webpage
+
+## Pages
+
+* index.html - Login Page
+* home.html - Main Page
+* jobs_list.html - Shows Jobs
+* jobs_search.html - Search Jobs
+* details.html - Shows details for a job
+* users_list.html - List users
+* users_search.html - Search Users
+
+Pages above [HAVE | HAVE NOT] been tested as HTML5 strict and CSS2.1 Valid
+
+All pages (excluding the login page) contain the same navigation menu
+
+Pages are mostly linear, however it makes sense to go from jobs to users and vice versa
+
+All pages (excluding login) use the same structure and CSS stylesheets. (Also, black and white is always a good idea)
+
+Links [HAVE | HAVE NOT] been tested to make sure they are noty dead. And they are all relative.
+
+CSS has been used for page layouts. Excluding places where tables make sense. Like tabulated data.
+
+A reference page [DOES | DOES NOT] exists at reference.html
+
+## Form Controls
+
+## CSS
+
+## Javascript
+
+## DHTML
