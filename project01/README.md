@@ -60,6 +60,17 @@
 8. Page layouts in CSS ONLY
 9. References for all free media on a webpage
 
+**Tickboxes:**
+> 1. Done
+2. Check This
+3. No Site Map
+4. Done
+5. Done. Neaten up CSS
+6. Done. Check for deads
+7. Sorta
+8. Done.
+9. TODO
+
 ## Pages
 
 * index.html - Login Page
