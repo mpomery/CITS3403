@@ -2,7 +2,7 @@
 $(document).ready(function() {
 	console.log('Document Loaded');
 	loadShortcuts();
-	loadLinks();
+	//loadLinks();
 });
 
 function loadShortcuts() {
