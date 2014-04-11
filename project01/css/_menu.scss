@@ -1,11 +1,13 @@
-.menu-left-collapsed {
-	height: 100%;
-	width: $menuwidthcollapsed;
+@mixin calc($property, $expression) { 
+	#{$property}: -webkit-calc(#{$expression}); 
+	#{$property}: calc(#{$expression}); 
 }
+
 
 .menu-left{
 	background: $darkerarea;
-	float: left;
+	//float: left;
+	display: inline-block;
 	height: 100%;
 	width: $menuwidth;
 	overflow: hidden;
@@ -76,10 +78,10 @@
 
 .main {
 	height: 100%;
-	margin-left: $menuwidth;
-	max-width: 100%;
-	min-width: $mainwidth;
-	padding-left: - $menuwidth;
+	@include calc(width, "100% - " + $menuwidth);
 	overflow-y: scroll;
 	overflow-x: hidden;
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
 }

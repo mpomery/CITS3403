@@ -27,13 +27,9 @@
     margin-left: auto;
     margin-right: auto; }
 
-.menu-left-collapsed {
-  height: 100%;
-  width: 24px; }
-
 .menu-left {
   background: #dddddd;
-  float: left;
+  display: inline-block;
   height: 100%;
   width: 256px;
   overflow: hidden; }
@@ -83,12 +79,13 @@
 
 .main {
   height: 100%;
-  margin-left: 256px;
-  max-width: 100%;
-  min-width: 768px;
-  padding-left: -256px;
+  width: -webkit-calc(100% - 256px);
+  width: calc(100% - 256px);
   overflow-y: scroll;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto; }
 
 .home {
   background: #FFFFFF;
@@ -465,8 +462,15 @@ html, body {
   min-width: 1024px;
   padding: 0;
   width: 100%;
-  font-size: 14px;
   font-family: Verdana, Geneva, sans-serif; }
 
 body {
-  background: url("office.png"); }
+  font-size: 14px;
+  background: url("office.png");
+  font-size: 0; }
+  body div {
+    font-size: 14px; }
+
+.validation {
+  position: fixed;
+  bottom: 0; }

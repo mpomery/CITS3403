@@ -27,12 +27,16 @@ html, body {
 	min-width: $width;
 	padding: 0;
 	width: 100%;
-	font-size: $fontsize;
 	font-family: Verdana, Geneva, sans-serif;
 }
 
 body {
+	font-size: $fontsize;
 	background: url("office.png");
+	font-size: 0;
+	div {
+		font-size: $fontsize;
+	}
 }
 
 .validation {
