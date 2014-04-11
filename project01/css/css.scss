@@ -14,13 +14,6 @@ $shadow:		#888888;
 
 $fontsize: 14px;
 
-@import 'login';
-@import 'menu';
-@import 'home';
-@import 'ticket';
-@import 'jobslist';
-@import 'users';
-
 html, body {
 	height: 100%;
 	margin: 0;
@@ -43,3 +36,10 @@ body {
 	position: fixed;
 	bottom: 0;
 }
+
+@import 'login';
+@import 'menu';
+@import 'home';
+@import 'ticket';
+@import 'jobslist';
+@import 'users';
