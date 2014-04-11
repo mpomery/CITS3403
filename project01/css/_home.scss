@@ -1,34 +1,5 @@
-.home {
-	background: #FFFFFF;
-	border: solid 1px $background;
-	border-bottom: none;
-	border-top: none;
-	margin-left: auto;
-	margin-right: auto;
-	//min-height: 100%;
-	width: $mainwidth;
-	padding-bottom: 30px;
-}
-
 .home-header {
 	width: 100%;
-}
-
-.home-welcome {
-	float: left;
-	font-size: 200%;
-	font-weight: bold;
-	padding-top: 10px;
-	padding-bottom: 20px;
-	padding-left: 15px;
-}
-.home-welcome2 {
-	float: right;
-	font-size: 200%;
-	font-weight: bold;
-	padding-top: 10px;
-	padding-bottom: 20px;
-	padding-left: 15px;
 }
 
 .home-content {

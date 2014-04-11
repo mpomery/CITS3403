@@ -11,9 +11,7 @@
   top: 50%;
   left: 50%;
   margin-left: -256px;
-  /* width / -2 */
   margin-top: -128px;
-  /* height / -2 */
   width: 450px;
   height: 194px;
   padding: 30px;
@@ -87,7 +85,7 @@
   margin-left: auto;
   margin-right: auto; }
 
-.home {
+.ticket, .users-list, .home, .jobs-list {
   background: #FFFFFF;
   border: solid 1px black;
   border-bottom: none;
@@ -97,10 +95,16 @@
   width: 768px;
   padding-bottom: 30px; }
 
-.home-header {
-  width: 100%; }
+.users-lines, .jobs-lines, .ticket-note {
+  margin-top: 30px;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0px;
+  border-bottom: solid 1px #aaaaaa;
+  clear: right; }
 
-.home-welcome {
+.home-welcome, .ticket-name {
   float: left;
   font-size: 200%;
   font-weight: bold;
@@ -108,13 +112,16 @@
   padding-bottom: 20px;
   padding-left: 15px; }
 
-.home-welcome2 {
+.ticket-number, .home-welcome2 {
   float: right;
   font-size: 200%;
   font-weight: bold;
   padding-top: 10px;
   padding-bottom: 20px;
-  padding-left: 15px; }
+  padding-right: 15px; }
+
+.home-header {
+  width: 100%; }
 
 .home-content {
   width: 700px;
@@ -204,34 +211,8 @@
   text-align: center;
   display: inline-block; }
 
-.ticket {
-  background: #FFFFFF;
-  border: solid 1px black;
-  border-bottom: none;
-  border-top: none;
-  margin-left: auto;
-  margin-right: auto;
-  width: 768px;
-  padding-bottom: 30px; }
-
 .ticket-header {
   width: 100%; }
-
-.ticket-name {
-  float: left;
-  font-size: 200%;
-  font-weight: bold;
-  padding-top: 10px;
-  padding-bottom: 20px;
-  padding-left: 15px; }
-
-.ticket-number {
-  float: right;
-  font-size: 200%;
-  font-weight: bold;
-  padding-top: 10px;
-  padding-bottom: 20px;
-  padding-right: 15px; }
 
 .ticket-header-info {
   clear: right;
@@ -255,15 +236,6 @@
   padding: 10px;
   border: solid 1px #aaaaaa;
   box-shadow: 5px 5px 10px #888888; }
-
-.ticket-note {
-  margin-top: 30px;
-  width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 0px;
-  border-bottom: solid 1px #aaaaaa;
-  clear: right; }
 
 .ticket-note-line {
   width: 700px;
@@ -325,16 +297,6 @@
   .ticket-note-time input {
     width: 40px; }
 
-.jobs-list {
-  border-bottom: none;
-  background: #FFFFFF;
-  border: solid 1px black;
-  border-top: none;
-  margin-left: auto;
-  margin-right: auto;
-  width: 768px;
-  padding-bottom: 30px; }
-
 .ticket-header {
   width: 100%; }
 
@@ -345,15 +307,6 @@
   padding-top: 10px;
   padding-bottom: 20px;
   padding-left: 15px; }
-
-.jobs-lines {
-  margin-top: 30px;
-  width: 702px;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 0px;
-  border-bottom: solid 1px #aaaaaa;
-  clear: right; }
 
 .jobs-line {
   width: 702px;
@@ -398,16 +351,6 @@
 .ancient {
   background: #FF0000; }
 
-.users-list {
-  border-bottom: none;
-  background: #FFFFFF;
-  border: solid 1px black;
-  border-top: none;
-  margin-left: auto;
-  margin-right: auto;
-  width: 768px;
-  padding-bottom: 30px; }
-
 .users-title {
   float: none;
   font-size: 200%;
@@ -415,15 +358,6 @@
   padding-top: 10px;
   padding-bottom: 20px;
   padding-left: 15px; }
-
-.users-lines {
-  margin-top: 30px;
-  width: 702px;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 0px;
-  border-bottom: solid 1px #aaaaaa;
-  clear: right; }
 
 .users-line {
   width: 702px;
