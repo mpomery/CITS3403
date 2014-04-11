@@ -24,8 +24,12 @@ function loadLinks() {
 
 function validation() {
 	$(
-			'<div class="validation"><a href="http://www.w3.org/html/logo/">' +
-			'<img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="165" height="64" alt="HTML5 Powered" title="HTML5 Powered">' +
+			'<div class="validation">' +
+			'<a href="http://validator.w3.org/check?uri=' + encodeURI(document.URL) +
+			'"><img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="165" height="64" alt="HTML5 Powered" title="HTML5 Powered">' +
+			'</a>' + 
+			'<a href="http://jigsaw.w3.org/css-validator/validator?uri=' + encodeURI(document.URL) +
+			'"><img src="http://www.w3.org/Icons/valid-css.png" alt="CSS2.1 Valid" title="CSS2.1 Valid">' + 
 			'</a></div>'
 	).insertAfter('.logout');
 }
