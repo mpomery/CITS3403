@@ -1,9 +1,11 @@
+// This file looks jQuey heavy, but all the jQuery does is stop me from having
+// to make a heap of calls to document.getElementById
+
 // UI things to do when the document runs
 $(document).ready(function() {
 	console.log('Document Loaded');
 	loadShortcuts();
 	validation();
-	//loadLinks();
 });
 
 function loadShortcuts() {
