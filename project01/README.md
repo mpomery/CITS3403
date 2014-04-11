@@ -1,7 +1,10 @@
 # Project 1
 
-Website can be found at:
+Website can be found at:  
 	http://student.csse.uwa.edu.au/~21130887/CITS3403/project01/
+
+Development Can be seen at:  
+	https://github.com/mpomery/CITS3403/tree/master/project01
 
 ## Contents
 
