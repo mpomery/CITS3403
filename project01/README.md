@@ -1,5 +1,8 @@
 # Project 1
 
+Website can be found at:
+	http://student.csse.uwa.edu.au/~21130887/CITS3403/project01/
+
 ## Contents
 
 * Contents
@@ -9,6 +12,7 @@
 * CSS
 * Javascript
 * DHTML
+* Things Used
 
 ## Specifications
 
@@ -62,14 +66,14 @@
 
 **Tickboxes:**
 > 1. Done
-2. Check This
-3. No Site Map
+2. Yep
+3. Done
 4. Done
-5. Done. Neaten up CSS
-6. Done. Check for deads
-7. Sorta
+5. Done. Neaten up CSS though
+6. Done
+7. Done
 8. Done.
-9. TODO
+9. Done
 
 ## Pages
 
@@ -81,24 +85,61 @@
 * users_list.html - List users
 * users_search.html - Search Users
 
-Pages above [HAVE | HAVE NOT] been tested as HTML5 strict and CSS2.1 Valid
+Pages above HAVE been tested as HTML5 strict and CSS2.1 Valid
 
 All pages (excluding the login page) contain the same navigation menu
 
 Pages are mostly linear, however it makes sense to go from jobs to users and vice versa
 
-All pages (excluding login) use the same structure and CSS stylesheets. (Also, black and white is always a good idea)
+All pages use the same structure and CSS stylesheets. (Also, black and white is always a good idea)
 
-Links [HAVE | HAVE NOT] been tested to make sure they are noty dead. And they are all relative.
+Links HAVE been tested to make sure they are noty dead. And they are all relative.
 
 CSS has been used for page layouts. Excluding places where tables make sense. Like tabulated data.
 
-A reference page [DOES | DOES NOT] exists at reference.html
+A reference page DOES exists at about.html
 
 ## Form Controls
 
+* Login Form (index.html)
+* Search Jobs (jobs_search.html)
+* Search Users (users_search.html)
+* Add Users (users_add.html)
+
+Not Made:
+* Add Jobs
+
 ## CSS
+
+File: css/css.css
+
+CSS was written as SCSS (SASS) which is essentially CSS with the ability to lay 
+it out in several files before combining it into one. It also has neat features making
+it easy to see what falls below classes in the hierarchy.
 
 ## Javascript
 
+File: js/ui.js
+
+Javascript is used to generate and create the links for the HTML and CSS Validation icons.
+It also allows the user to switch between Home, Tickets and Logout in the menu bar on the left.
+
 ## DHTML
+
+Dynamic HTML (DHTML) is used to change the data that is shown in the left menu.
+Upon clicking one of the links up the top of the menu, the menu changes to show the new tab.
+JS was also used to generate these links, rather than hard coding them, as in a template based website,
+new links can be added without needing to update the Javascript.
+
+## Things Used
+
+* SASS
+  * For writing the CSS
+* csscss
+  * For helping simplify the CSS
+* http://www.styleneat.com/
+  * Cleaning up the CSS post everything
+* Notepad++
+  * As the IDE
+* http://www.markdownviewer.com/
+  * To help format this readme
